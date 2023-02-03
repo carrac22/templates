@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,900&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* general styling */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.max-width{
+    max-width: 1200px;
+    padding: 0 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+
+
+
+
+/* mutliple styling patterns */
+
+.drinks , .food, .home-content, .footer {
+    font-family: "Poppins", "sans serif";
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color:#333;
+
+}
+
+.text-1{
+    font-size: 50px;
+    color: #333;
+}
+
+.text-2{
+    font-size: 20px;
+    color: #333;
+
+}
+.text-3{
+    font-size: 60px;
+    color: #333;
+
+}
+.text-4{
+    font-size: 20px;
+    color: #333;
+
+}
+
+
+
+
+/* NAabar */
+.navbar {
+    overflow: hidden;
+    background-color: #333; 
+    height: 60px;
+    width: 100%;
+}
+  
+.navbar a {
+    float: right;
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: right;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 23px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(0, 136, 255);
+}
+
+.subnav-content {
+    background-color: rgba(0, 0, 0, 0.324);
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: 00b2ff;
+    width: 100%;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: right;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.logo-image{
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-image: url("images/weblogo.png");
+}
+
+
+/* Intro  */
+
+#background{
+    background-image:linear-gradient(to right, rgba(255, 255, 255, 0.01),rgba(255, 255, 255, 0.109),rgba(255, 255, 255, 0.868), rgb(255, 255, 255)), url("images/5811.JPEG");
+    background-size: cover;
+    position:absolute;
+    width: 100%;
+    height: 720px;
+    -webkit-transform: scaleX(-1);
+    transform: rotateX(-1);
+    background-repeat: no-repeat;
+}
+#logo {
+    background-image: url("images/finishedAplen.png");
+    height:650px;
+    width: 600px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin-left: 4%;
+    margin-right:70%;
+    position:relative; /* and this has to be relative */
+}
+
+
+
+
+/* Home section styling */
+
+
+
+
+
+
+/* Beer Section */
+
+
+#drinks{
+    position: relative;
+    margin-top:3em;
+    background: rgb(228, 228, 228);    
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-bottom: 150px;
+    height: 50%;
+}
+
+.drinks .drink-content .wrapper {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+}
+.drinks .drink-content .wrapper .card{
+    width: 100%;
+    text-align: center;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #333;
+
+    
+}
+
+.drinks .drink-content .wrapper .card h1{
+    font-family: 'Apple Chancery', sans-serif;
+    color: white;
+}
+
+.drinks .drink-content .wrapper .card:hover{
+    transform: scale(1.05);
+}
+
+#helles{
+    -webkit-transform: scaleX(-1);
+    transform: rotateX(-1);
+}
+
+
+#dunkles{
+    -webkit-transform: scaleX(-1);
+    transform: rotateX(-1);
+}
+
+.drinks .drink-content .wrapper p{
+    text-align: inherit;
+    font-family: sans-serif;
+    position: relative;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.drinks .drink-content .wrapper .card box{
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.drinks .drink-content .wrapper .card img{
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: -30px;
+    position: static;    
+}
+
+
+
+.drinks span{
+    cursor: pointer;
+    color: rgb(0, 136, 255);
+    position: relative;
+}
+
+.clear{
+  clear: both;
+}
+
+
+/* Home */
+
+.home{
+    margin-top:0px;
+    padding-top: 20px;
+    background: whitesmoke;    
+    overflow: auto hidden;
+}
+
+.home-content .wrapper{
+    width: 100%;
+    display: block;
+
+}
+.home .card{
+    margin-bottom: 100px;
+}
+
+.home .clip-art{
+    position: relative;
+    float: left;
+
+}
+.home .clip-art img{ 
+    height: 400px;
+    width: auto;
+    padding: 0 20px 10px 0;
+    margin-top: 20px;
+}
+
+.home .clip-art1{
+    position: relative;
+    float: right;
+}
+.home .clip-art1 img{ 
+    height: 300px;
+    padding: 0 0 10px 20px;
+}
+
+.clip-art, .clip-art1{
+    clear: both;
+}
+
+.clearfix:before, .clearfix:after { 
+    content: ""; 
+    display: table; 
+}
+.clearfix:after{ 
+    clear: both; 
+}
+.clearfix {
+    zoom: 1;
+}
+
+
+
+
+/* Footer section */
+
+footer{
+    background-color: #333;
+    border-style: none;
+    
+
+}
+.footer{
+    display: inline-block;
+    width: 100%;
+}
+
+.footer .wrapper{
+    display: grid;
+    grid-template-columns: 66% 33%;
+    color: #eee;
+    justify-content: center;
+
+}
+
+.footer .column1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer .wrapper .icons{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+}
+
+.footer .wrapper .icons .row{
+    display: grid;
+    grid-template-columns: auto ;
+    position: relative;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footer .info {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 3;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.footer .wrapper img{
+    justify-content: center;
+    align-items: center;
+    background-size:cover;
+    height: auto;
+    width: 300px;
+    margin-top: 5px;
+
+}
+
+.footer .logo3{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.end{
+    background-color: rgb(129, 129, 129);
+}
+
+
+/* Gallery */
+.beer, .food, .Atmosphere{
+    border: solid black 1px;
+}
+
+.beer{
+    background-color: rgb(75, 75, 75);
+}
+.food{
+    background-color: #333;
+}
+.Atmosphere{
+    background-color: rgb(75, 75, 75);
+}
+
+.beer .tile, .food .tile, .Atmosphere .tile{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 200px;
+    height: 50vh;
+    justify-content: center;
+}
+
+
+/* Beer section */
+
+#beer_gallery, #food_gallery, #Atmosphere_gallery{
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 70px;
+    color: #eee;
+    align-content: center;
+    margin-left: 5%;
+}
+.beer .tile img{
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-size: cover;
+    border: solid 1px black;
+
+}
+.food .tile img{
+    background-color: #eee;
+    width: 90%;
+    background-size: cover;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: solid 1px black;
+
+}
+
+.Atmosphere .tile img{
+    width: 90%;
+    background-size: cover;
+    border: solid 1px black;
+
+}
+
+.band{
+    padding: 0 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:1250px){
+    
+    .clip-art{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        height: auto;
+        width: auto;
+
+    }
+    .clip-art1{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        width: auto;
+        height: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+
+    }
+    
+}
+
+
+
+@media(max-width:990px){
+    .home .wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+
+    }
+   
+    .footer .wrapper .icons .row{
+        row-gap: 1em;
+    }
+
+    .drinks .drink-content .wrapper{
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: -50px;
+    }
+    .drinks .drink-content .wrapper .card{
+        margin-bottom: 150px;
+        width: 80%;
+    }
+    .drinks .drink-content .wrapper .card p{
+        font-size: 24px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .clip-art1, .clip-art{
+        padding: 0 0 0 0;
+    }
+
+    .clip-art1 img{
+        text-align: center;
+    }
+
+    .clip-art1 img{
+        width: 90%;
+        background-size:cover;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+
+    .info{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .column1 .logo2{
+        padding-top: 25px;
+    }
+    .info h3{
+        font-size: 40px;
+    }
+    .info h4{
+        font-size: 20px;
+    }
+
+    .drinks .card{
+        margin-top: 20px;
+    }
+
+    .footer{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer .wrapper{
+        display:grid;
+        grid-template-columns: 90%;     
+    }
+
+    .icons{
+        margin-bottom: 50px;
+    }
+   
+}
+
+
+
+
+
+@media(max-width:925px){
+    .background .tile{
+        display: grid;
+        grid-template-columns: auto;
+        margin-bottom: 200px;
+    }
+    
+    .background h3{
+        padding: 10px;
+    }
+
+    .beer img, .food img, .Atmosphere img{
+        margin-bottom: 100px;
+    }
+    .food, .beer, Atmosphere{
+        padding-bottom: 50px;
+    }
+    
+}
+
+@media(max-width:700px){
+    .clip-art1 img{
+        width: 100%;
+        background-size: contain;
+        padding: 0;
+        margin: 0;
+        height: 200;
+    }
+   
+}
+
