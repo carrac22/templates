@@ -16,42 +16,21 @@
 
     </head>
 <body>
-    <div class="navbar">
-        <a href="#footer">Contact</a>
-        <div class="subnav">
-            <button class="subnavbtn">Menus <i class="fa fa-caret-down"></i></button>
-            <div class="subnav-content" id="sub_beer">
-                <a href="images/menu.pdf">Food</a>
-                <a href="images/menu.pdf">Drinks</a>
+    <nav class= "navbar">
+        <div class="wrapper">
+            <div class="logo"> <img src="images/weblogo.png" alt="logo"> <a href="#"> Alpen Brewery</a> </div>
+            <ul class="menu">
+                <li><a href="index.html#home" class='menu-btn'>Home</a></li>
+                <li><a href="#about" class='menu-btn'>About</a></li>
+                <li><a href="images/menu.pdf" class='menu-btn'>Menu</a></li>
+                <li><a href="gallery.html#beer_gallery" class='menu-btn'>Gallery</a></li>
+                <li><a href="index.html#footer" class='menu-btn'>Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fa fa-bars"></i>          
             </div>
         </div>
-        <div class="subnav">
-            <button class="subnavbtn">Gallery <i class="fa fa-caret-down"></i></button>
-            <div class="subnav-content">
-                  <a href="gallery.html#Atmosphere_gallery">Atmosphere</a>
-                  <a href="gallery.html#food_gallery">Food</a>
-                  <a href="gallery.html#beer_gallery">Drinks</a>
-            </div>
-          </div>
-
-        <div class="subnav">
-            <button class="subnavbtn">Beer <i class="fa fa-caret-down"></i></button>
-            <div class="subnav-content">
-                  <a href="index.html#express">How we brew</a>
-                  <a href="index.html#drinks">Brew Types</a>
-                  
-            </div>
-          </div>
-        
-        
-        <a href="#home">Home</a>
-        <div class="navbar-brand" href="/">
-            <div class="logo-image">
-                  <img src="images/finishedAplen.png" class="img-fluid">
-            </div>
-        </div>
-        
-    </div>
+    </nav>
     
   <section class="intro" id="home">
         <div id="background"></div>
@@ -95,7 +74,7 @@
     </section>
 
    <!-- This will be the home section -->
-    <section class="home" >
+    <section class="home" id="about" >
         <div class="max-width">
             <div class="home-content">
                 <div class="wrapper ">
@@ -165,13 +144,14 @@
                     </div>
                 </div>
             </div>
-        </div>  
+        </div> 
+        <script src="restaurant.js"> </script>
+ 
     </footer>
 
     <div class="end">
         <span> Created by Anthony Carr | <span class="far fa-copyright"></span> 2022 All Rights Reserved</span>
     </div> 
 
-    <script src="restaurant.js"> </script>
 </body>
 </html>

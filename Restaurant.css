@@ -13,6 +13,13 @@ html{
     scroll-behavior: smooth;
 }
 
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 .max-width{
@@ -62,86 +69,91 @@ html{
 
 
 
-
 /* NAabar */
-.navbar {
-    overflow: hidden;
-    background-color: #333; 
-    height: 60px;
+
+.navbar{
+    position: fixed;
     width: 100%;
-}
-  
-.navbar a {
-    float: right;
-    font-size: 23px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.subnav {
-    float: right;
-    overflow: hidden;
-}
-
-.subnav .subnavbtn {
-    font-size: 23px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: rgb(0, 136, 255);
-}
-
-.subnav-content {
-    background-color: rgba(0, 0, 0, 0.324);
-    display: none;
-    position: absolute;
-    left: 0;
-    background-color: 00b2ff;
-    width: 100%;
+    padding: 15px 0px;
+    transition: all 0.5s ease;
     z-index: 1;
+    background-color: #333;
+}
+.navbar.sticky{
+    padding: 20px 0px;
+}
+.navbar .wrapper{
+    max-width: 1500px;
+    padding: 0 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.subnav-content a {
-    float: right;
-    color: white;
-    text-decoration: none;
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
 }
 
-.subnav-content a:hover {
-    background-color: #eee;
-    color: black;
+
+.navbar .logo{
+    display: flex;
+    text-align: center;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Apple Chancery', sans-serif;
+    font-weight: 400;
 }
 
-.subnav:hover .subnav-content {
+
+.navbar .logo img{
+    width: 40px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.navbar .logo a span{
+    font-weight: 600;
+}
+.navbar .menu li a{
     display: block;
+    color:#fff;
+    font-size: 20px;
+    margin-left: 20px;
+    font-family: "Poppins", "sans serif";
+
+    transition: color 0.5;
+
+}   
+.navbar .menu li a:hover{
+    color: rgb(0, 183, 255);
 }
 
-.logo-image{
-    height: 50px;
-    width: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-image: url("images/weblogo.png");
+.navbar.sticky .menu li a:hover{
+    color: white;
+}
+
+.menu-btn{
+    display: none;
 }
 
 
 /* Intro  */
 
+.intro{
+    padding-top: 70px;
+    width: 100vw;
+}
+
 #background{
     background-image:linear-gradient(to right, rgba(255, 255, 255, 0.01),rgba(255, 255, 255, 0.109),rgba(255, 255, 255, 0.868), rgb(255, 255, 255)), url("images/5811.JPEG");
     background-size: cover;
     position:absolute;
-    width: 100%;
+    width: 100vw;
     height: 720px;
     -webkit-transform: scaleX(-1);
     transform: rotateX(-1);
@@ -150,22 +162,14 @@ html{
 #logo {
     background-image: url("images/finishedAplen.png");
     height:650px;
-    width: 600px;
+    width: 100vw;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-left: 20px;
     background-size:contain;
     background-repeat: no-repeat;
-    margin-left: 4%;
-    margin-right:70%;
     position:relative; /* and this has to be relative */
 }
-
-
-
-
-/* Home section styling */
-
-
-
-
 
 
 /* Beer Section */
@@ -456,7 +460,44 @@ footer{
 }
 
 @media(max-width:1250px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+        color: #eee;
+        transform: scale(2);
     
+    }
+
+    .navbar .menu{
+        position: fixed;
+        background: #333;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    
+    .navbar .menu li{
+        display: block;
+
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
     .clip-art{
         display: inline-block;
         position: relative;
@@ -597,4 +638,3 @@ footer{
     }
    
 }
-
