@@ -563,6 +563,11 @@ footer{
 
 
 @media(max-width:925px){
+    .footer .column1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
     .background .tile{
         display: grid;
         grid-template-columns: auto;
