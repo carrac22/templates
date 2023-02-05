@@ -77,10 +77,12 @@ a{
     padding: 15px 0px;
     transition: all 0.5s ease;
     z-index: 1;
-    background-color: rgba(51, 51, 51, 0.618);
+    background-color: rgb(51, 51, 51);
 }
 .navbar.sticky{
     padding: 20px 0px;
+    background-color: rgba(51, 51, 51, 0.618);
+
 }
 .navbar .wrapper{
     max-width: 1600px;
