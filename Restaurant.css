@@ -482,6 +482,16 @@ footer{
         font-size: 25px;
     }
 
+
+    #logo{
+        width: auto;
+        height: 100vh;
+        margin-right: 15px;
+    }
+
+
+
+
     .home .wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -566,10 +576,10 @@ footer{
 }
 
 
-
-
-
 @media(max-width:925px){
+
+   
+
     .footer .column1{
         display: grid;
         grid-template-columns: auto;
