@@ -77,14 +77,15 @@ a{
     padding: 15px 0px;
     transition: all 0.5s ease;
     z-index: 1;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.618);
 }
 .navbar.sticky{
     padding: 20px 0px;
 }
 .navbar .wrapper{
-    max-width: 1500px;
-    padding: 0 30px;
+    max-width: 1600px;
+    padding-left: 0;
+    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -139,13 +140,14 @@ a{
 
 .menu-btn{
     display: none;
+    cursor: pointer;
 }
 
 
 /* Intro  */
 
 .intro{
-    padding-top: 70px;
+    padding-top: 84px;
     width: 100vw;
 }
 
@@ -162,7 +164,7 @@ a{
 #logo {
     background-image: url("images/finishedAplen.png");
     height:650px;
-    width: 100vw;
+    width: 90vw;
     margin-top: 30px;
     margin-bottom: -10px;
     margin-left: 20px;
@@ -528,6 +530,7 @@ footer{
         row-gap: 20px;
 
     }
+    
    
     .footer .wrapper .icons .row{
         row-gap: 1em;
