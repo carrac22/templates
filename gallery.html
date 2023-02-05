@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <script src="https://kit.fontawesome.com/b0e52b451e.js" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" href="Restaurant.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Alpen Gallery</title>
+        <script src="https://kit.fontawesome.com/b0e52b451e.js" crossorigin="anonymous"></script>    
+        <link href="https://fonts.cdnfonts.com/css/apple-chancery" rel="stylesheet">
+        <link rel="stylesheet" href="Restaurant.css">
+        <link href="/components/formstone/dist/css/grid.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="x-icon" href="/Users/anthonycarr/Downloads/favicon_io/favicon.io">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
 
 </head>
 <body>
@@ -26,48 +33,24 @@
         </div>
     </nav>
 
-    <div class="background">
-        <div class="beer">
-            <h3 id="beer_gallery">BEER GALLERY</h3>
-            <div class="band">
-                <div class="tile">
-                    <img src="images/beer/photo1.jpeg" alt="">
-                    <img src="images/beer/photo2.jpeg" alt="">
-                </div>
-                <div class="tile">
-                    <img src="images/beer/photo4.jpeg" alt="">
-                    <img src="images/beer/photo3.webp" alt="">
-
-                </div>
-            </div>
-        </div>
-        <div class="food">
-            <h3 id="food_gallery">FOOD GALLERY</h3>
-            <div class="band">
-                <div class="tile">
-                    <img src="images/food/photo1.jpeg" alt="">
-                    <img src="images/food/photo2.jpeg" alt="">
-                </div>
-                <div class="tile">
-                    <img src="images/food/photo3.jpeg" alt="">
-                    <img src="images/food/photo4.jpeg" alt="">
+    <section class="blog-feeder">
+        <div class="grid-container">
+            <div class="max-width">
+                <div class="wrapper">
+                    <div class="article-preview grid"><img src="images/beer/photo1.jpeg" alt=""></div>   
+                    <div class="article-preview grid"><img src="images/beer/photo2.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/beer/photo4.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/food/photo1.jpeg" alt=""></div>    
+                    <div class="article-preview grid"><img src="images/food/photo2.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/food/photo3.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/food/photo4.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/Atmosphere/photo1.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/Atmosphere/photo2.jpeg" alt=""></div>
+                    <div class="article-preview grid"><img src="images/Atmosphere/photo3.jpeg" alt=""></div>
                 </div>
             </div>
         </div>
-        <div class="Atmosphere">
-            <h3 id="Atmosphere_gallery">ATMOSPHERE GALLERY</h3>
-            <div class="band">
-                <div class="tile">
-                    <img src="images/Atmosphere/photo1.jpeg" alt="">
-                    <img src="images/Atmosphere/photo2.jpeg" alt="">
-                </div>
-                <div class="tile">
-                    <img src="images/Atmosphere/photo3.jpeg" alt="">
-                    <img src="images/Atmosphere/photo4.jpeg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer section -->
     <footer>
@@ -106,14 +89,12 @@
                     </div>
                 </div>
             </div>
-        </div>  
-        <script src="restaurant.js"> </script>
-
+        </div> 
+        <script src="restaurant.js"></script>
     </footer>
 
     <div class="end">
         <span> Created by Anthony Carr | <span class="far fa-copyright"></span> 2022 All Rights Reserved</span>
     </div> 
-
 </body>
 </html>

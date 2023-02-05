@@ -393,72 +393,28 @@ footer{
 
 
 /* Gallery */
-.beer, .food, .Atmosphere{
-    border: solid black 1px;
+.blog-feeder{
+    background-color: rgb(98, 98, 98);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    gap: 1em;
 }
 
-.beer{
-    background-color: rgb(75, 75, 75);
-}
-.food{
-    background-color: #333;
-}
-.Atmosphere{
-    background-color: rgb(75, 75, 75);
-}
-
-.beer .tile, .food .tile, .Atmosphere .tile{
+.grid-container .wrapper{
     display: grid;
-    grid-template-columns: auto auto;
-    margin-left: 4%;
-    margin-right: auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1em;
+
+}
+
+
+
+
+
+.blog-feeder .wrapper img{
+    display: block;
     width: 100%;
-    margin-bottom: 200px;
-    height: 50vh;
-    justify-content: center;
-}
 
-
-/* Beer section */
-
-#beer_gallery, #food_gallery, #Atmosphere_gallery{
-    margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 70px;
-    color: #eee;
-    align-content: center;
-    margin-left: 5%;
-}
-.beer .tile img{
-    width: 90%;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-size: cover;
-    border: solid 1px black;
-
-}
-.food .tile img{
-    background-color: #eee;
-    width: 90%;
-    background-size: cover;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: solid 1px black;
-
-}
-
-.Atmosphere .tile img{
-    width: 90%;
-    background-size: cover;
-    border: solid 1px black;
-
-}
-
-.band{
-    padding: 0 80px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 @media(max-width:1250px){
@@ -529,6 +485,11 @@ footer{
         grid-template-columns: 100%;
         row-gap: 20px;
 
+    }
+    .color h3{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
     
    
