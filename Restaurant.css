@@ -137,7 +137,8 @@ a{
 }
 
 .navbar.sticky .menu li a:hover{
-    color: white;
+    color: rgb(0, 183, 255);
+
 }
 
 .menu-btn{
@@ -490,9 +491,6 @@ footer{
         margin-right: 15px;
     }
 
-
-
-
     .home .wrapper {
         display: grid;
         grid-template-columns: 100%;
@@ -612,6 +610,10 @@ footer{
         padding: 0;
         margin: 0;
         height: 200;
+    }
+
+    .drink-content .card p{
+        margin-bottom: 50px;
     }
    
 }
