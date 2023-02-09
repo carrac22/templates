@@ -74,14 +74,14 @@ a{
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 15px 0px;
+    padding: 30px 0px;
     transition: all 0.5s ease;
     z-index: 1;
-    background-color: rgb(51, 51, 51);
+    background-color: white;
+    border-bottom: rgb(92, 91, 91) 1px solid;
 }
 .navbar.sticky{
     padding: 20px 0px;
-    background-color: rgba(51, 51, 51, 0.618);
 
 }
 .navbar .wrapper{
@@ -106,15 +106,15 @@ a{
     text-align: center;
 }
 .navbar .logo a{
-    color: #fff;
-    font-size: 35px;
+    color: black;
+    font-size: 45px;
     font-family: 'Apple Chancery', sans-serif;
-    font-weight: 400;
+    font-weight: 800;
 }
 
 
 .navbar .logo img{
-    width: 40px;
+    width: 50px;
     margin-left: 20px;
     height: auto;
 }
@@ -124,7 +124,7 @@ a{
 }
 .navbar .menu li a{
     display: block;
-    color:#fff;
+    color:black;
     font-size: 20px;
     margin-left: 20px;
     font-family: "Poppins", "sans serif";
@@ -168,8 +168,8 @@ a{
     background-image: url("images/finishedAplen.png");
     height:650px;
     width: 90vw;
-    margin-top: 30px;
-    margin-bottom: -10px;
+    margin-top: 50px;
+    margin-bottom: -30px;
     margin-left: 20px;
     background-size:contain;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ a{
 #drinks{
     position: relative;
     margin-top:3em;
-    background: rgb(228, 228, 228);    
+    background: rgb(222, 239, 255);    
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 40px;
@@ -191,10 +191,17 @@ a{
     height: 50%;
 }
 
+.drinks .max-width{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    margin-bottom: -100px;
+}
+
 .drinks .drink-content .wrapper {
     display: grid;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     grid-template-columns: 33% 33% 33%;
     gap: 30px;
 }
@@ -240,7 +247,6 @@ a{
 
 .drinks .drink-content .wrapper .card box{
     position: relative;
-    margin-bottom: 30px;
     margin-top: 20px;
 }
 
@@ -269,8 +275,15 @@ a{
 .home{
     margin-top:0px;
     padding-top: 20px;
-    background: whitesmoke;    
+    background: rgb(222, 239, 255);    
     overflow: auto hidden;
+}
+
+.home .max-width{
+    background-color: white;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .home-content .wrapper{
@@ -278,9 +291,7 @@ a{
     display: block;
 
 }
-.home .card{
-    margin-bottom: 100px;
-}
+
 
 .home .clip-art{
     position: relative;
@@ -324,12 +335,12 @@ a{
 /* Footer section */
 
 footer{
-    background-color: #333;
-    border-style: none;
+    background-color: rgb(255, 255, 255);
     
 
 }
 .footer{
+    border-top: 1px solid rgb(92, 91, 91);
     display: inline-block;
     width: 100%;
 }
@@ -337,7 +348,7 @@ footer{
 .footer .wrapper{
     display: grid;
     grid-template-columns: 66% 33%;
-    color: #eee;
+    color: black;
     justify-content: center;
 
 }
@@ -367,11 +378,22 @@ footer{
 .footer .info {
     margin-top: 20px;
     font-size: 20px;
+    font-family: "Poppins", "sans serif";
+    font-weight: 300;
     line-height: 3;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
 
+}
+
+.footer h4{
+    font-family: "Poppins", "sans serif";
+    font-weight: 300;
+}
+.footer h3{
+    font-family: "Apple Chancery", "sans serif";
+    font-weight: 800;
 }
 
 
@@ -391,7 +413,8 @@ footer{
 }
 
 .end{
-    background-color: rgb(129, 129, 129);
+    border-top: 1px solid rgb(92, 91, 91);
+    background-color: rgb(222, 239, 255);
 }
 
 
@@ -457,7 +480,7 @@ footer{
 
     .navbar .menu{
         position: fixed;
-        background: #333;
+        background: whitesmoke;
         height: 100vh;
         width: 100%;
         left: -100%;
