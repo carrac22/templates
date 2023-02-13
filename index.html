@@ -41,32 +41,34 @@
   <section class="drinks" id="drinks">
         <div class="max-width">
             <h1 class="text-1">What's brewing?</h1>
-            <p class="text-2">Alpen Brewery is small start-up specializing in German-style beer. Located in a bustling neighborhood in Chapel Hill, this brewery offers a warm and inviting atmosphere for beer lovers to enjoy traditional handcrafted brews. <br><br> The restaurant portion of the business serves an abridged menu of traditional German and Amercian food, all of which pair perfectly with the in-house brewed beers. The menu features classic dishes such as our house burger, a rotissery half chicken, and classic fried chicken wings, all made from the freshest ingredients (see our menu for more information <a href="images/menu.pdf"> Menu</a>). <br><br> 
-                Whether you're looking to sample a variety of beers, enjoy a delicious meal, or just relax with friends, this brewery and restaurant is the perfect place to unwind and indulge in the best of German culture. See more about how we brew here! <a href="#home">How We Brew</a></p>
+            <p class="text-2">Alpen Brewery is small start-up specializing in German-style beer. Located in a bustling neighborhood in Chapel Hill, this brewery offers a warm and inviting atmosphere for beer lovers to enjoy traditional handcrafted brews. <br><br>
+                Whether you're looking to sample a variety of beers, enjoy a delicious meal, or just relax with friends, this brewery and restaurant is the perfect place to unwind and indulge in the best of German culture. See more about how we brew here! <a id="hyperlink" href="#home">How We Brew</a></p>
             <div class="drink-content">
                 <!-- To add for loop from server -->
                 <div class="wrapper">
-                    <div class="card">
+                    <div class="card" id="hell">
                         <div class="box" >
                             <h1 class="text-3">Helles</h1>
                             <img id="helles" src="images/Helles.png" alt="beer">
                         </div>
                         <p class="text-4">Light, crisp and refreshing, Helles Bier is the ideal choice for a balanced and satisfying beer experience.</p>
-                    </div>
-                    <div class="card">
-                        <div class="box">
-                            <h1 class="text-3">Weiß</h1>
-                            <img src="images/WeissBier.png" alt="beer">
-                        </div>
-                        <p class="text-4">Indulge in the unique taste of Weißbier, the traditional German wheat beer with hazy appearance, fruity and spicy aroma, and refreshing taste.</p>
 
                     </div>
+                    <div class="card" id="weiss">
+                        <div class="box" >
+                            <h1 class="text-3">Weiß</h1>
+                            <img src="images/weiss.png" alt="beer">
+                        </div>
+                        <p class="text-4">Indulge in the unique taste of Weißbier, the traditional German wheat beer with hazy appearance, fruity and spicy aroma, and refreshing taste.</p>
+                    </div>
+
                     <div class="card">
                         <div class="box">
                             <h1 class="text-3">Dunkles</h1>
                             <img id="dunkles" src="images/Dunkles.png" alt="beer">
                         </div>
                         <p class="text-4">Dark, rich and delicious, Dunklesbier is the perfect choice for those who love a bold beer flavor.</p>
+
                     </div>
                 </div>
             </div>
@@ -76,14 +78,14 @@
    <!-- This will be the food section -->
     <section>
         <div class="food">
-            <h1 class="text-1">What's cooking?</h1>
-            <p class="text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate unde sint qui aut nisi quis illo earum repellat quaerat corporis, doloribus et recusandae possimus, quia facere nobis quas repudiandae!</p>
             <div class="max-width">
+                <div class="line"></div>
+                <h1 class="text-1">What's cooking?</h1>
+                <p class="text-2">The restaurant portion of the business serves an abridged menu of traditional German and American food, all of which pair perfectly with the in-house brewed beers. The menu features classic dishes such as our house burger, a rotissery half chicken, and classic fried chicken wings, all made from the freshest ingredients (see our menu for more information <a id="hyperlink" href="images/menu.pdf"> Menu</a>). <br></p>
                 <div class="wrapper">
                     <div class="article_food">
                         <h1>Halb Hendl</h1>
                         <img src="images/halb.png" alt="">
-
                     </div>   
                     <div class="article_food">
                         <h1>Alpen Cheeseburger</h1>
@@ -125,11 +127,9 @@
                     </div>
             
                     <div class="icons">
-                        <div class="row" id="left">
+                        <div class="row">
                             <i class="fa-brands fa-facebook-f fa-5x" data-src="#home" onclick="onClick2(this);"></i>
                             <i class="fa-brands fa-twitter fa-5x" data-src="#home" onclick="onClick2(this);"></i>
-                        </div>
-                        <div class="row">
                             <i class="fa-brands fa-instagram fa-5x" data-src="#home" onclick="onClick2(this);"></i>
                             <i src="#beer" class="fa-brands fa-tiktok fa-5x" data-src="#home" onclick="onClick2(this);"></i>
                         </div>
