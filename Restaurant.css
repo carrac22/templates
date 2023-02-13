@@ -331,7 +331,7 @@ p{
     float: right;
 }
 .home .clip-art1 img{ 
-    height: 300px;
+    height: max(300px);
     padding: 0 0 10px 20px;
 }
 
@@ -408,68 +408,41 @@ p{
 
 footer{
     background-color:#333;
-    
+    height: auto;
 
 }
-.footer{
-    border-top: .1px solid rgb(92, 91, 91);
-    display: inline-block;
+
+
+.footer .wrapper{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: #eee;
+
+}
+
+.footer .col1, .footer .col2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap:nowrap; /* assumes you only want one row */
     width: 100%;
 }
 
-.footer .wrapper{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    color: #eee;
-    justify-content: center;
-
-}
-
-
-
-.footer .wrapper .icons{
-    margin-top: 30px;
-    display: grid;
-    position: relative;
-}
-
-.footer .wrapper .icons .row{
-    justify-content: center;
-    display: grid;
-    align-items: center;
-    grid-template-columns: auto auto auto auto;
-    gap: 4em;
-    position: relative;
+.footer .wrapper a{
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+    color: #eee;
 
 }
 
-.footer .info {
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: "Poppins", "sans serif";
-    font-weight: 300;
-    line-height: 3;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
-.footer h4{
-    font-family: "Poppins", "sans serif";
-    font-weight: 300;
-}
-.footer h3{
-    font-family: "Apple Chancery", "sans serif";
-    font-size: 30px;
-    font-weight: 800;
-}
+
+
+
+
+
 
 
 
@@ -493,10 +466,6 @@ footer{
     gap: 1em;
 
 }
-
-
-
-
 
 .blog-feeder .wrapper img{
     display: block;
@@ -592,7 +561,7 @@ footer{
         grid-template-columns: auto;
     }
     #weiss{
-        margin-bottom: 250px;
+        margin-bottom: 300px;
     }
 
     #hell{
@@ -626,7 +595,7 @@ footer{
     }
 
     .clip-art1 img{
-        width: 90%;
+        width: auto;
         background-size:cover;
         padding: 0;
         margin: 0;
@@ -645,18 +614,7 @@ footer{
     }
     
 
-    .footer .wrapper{
-        margin-left: auto;
-        margin-right: auto;
-        display:inline-grid;
-
-    }
-
-    .icons .row{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 50px;
-    }
+    
    
 }
 
@@ -679,24 +637,26 @@ footer{
     .beer, Atmosphere{
         padding-bottom: 50px;
     }
+    .footer .wrapper{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: auto;
+        color: #eee;
+    }
+    .footer .col1{
+        padding-bottom: 20px;
+    }
+    
     
 }
 
 
-@media(max-width:854px){
-    .footer .wrapper{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    .footer .info{
-        text-align: center;
-    }
-}
+
 
 
 @media(max-width:700px){
     .clip-art1 img{
-        width: 100%;
+        width: auto;
         background-size: contain;
         padding: 0;
         margin: 0;
