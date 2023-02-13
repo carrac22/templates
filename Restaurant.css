@@ -432,7 +432,8 @@ footer{
 
 .footer .wrapper a{
     cursor: pointer;
-    color: #eee;
+    color: rgb(177, 233, 255);
+    
 
 }
 
@@ -646,7 +647,7 @@ footer{
     .footer .col1{
         padding-bottom: 20px;
     }
-    
+
     
 }
 
