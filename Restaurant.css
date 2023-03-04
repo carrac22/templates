@@ -430,15 +430,15 @@ footer{
     width: 100%;
 }
 
-.footer .wrapper a{
+.footer .wrapper img{
     cursor: pointer;
     color: whitesmoke;
-    
-
+    width: 100px;
+    height: auto;
 }
-
-
-
+.footer .wrapper a{
+    color: white;
+}
 
 
 

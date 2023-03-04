@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+}
+
+h1{
+    color: #333;
+    font-weight:100;
+    font-size: 40px;
+}
+
+
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0px;
+    transition: all 0.5s ease;
+    z-index: 1;
+    background-color: white;
+    border-bottom: rgb(92, 91, 91) .1px solid;
+    border-top: rgb(92, 91, 91) .5px solid;
+
+}
+.navbar a{
+    color:#333;
+
+}
+
+.navbar .wrapper{
+    font-weight: 400;
+    font-size: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.navbar li{
+    cursor: pointer;
+}
+
+.navbar li:hover{
+    color: rgb(59, 59, 59);
+    text-decoration: underline 1px;
+}
+.block{
+    width: 1px;
+    height: 50px;
+    background-color: grey;
+}
+.main{
+    padding-top: 150px;
+    padding-bottom: 80px;
+}
+.main h1{
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+
+.wrapper{
+    margin-right: auto;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 4em;
+}
+
+.main_button{
+    width: 150px;
+    height: 30px;
+    background-color: #333;
+    color: #eee;
+    cursor: pointer;
+    justify-content: end;
+}
+
+.tag{
+    padding-top: 10px;
+    position: absolute;
+    float: left;
+    padding-left: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.add_Project, .add_Task, .change_Log{
+    border: solid grey 1px;
+    
+    height: 100%;
+}
+
+.content{
+    float: right;
+    padding-right: 15px;
+    margin-top: 320px;
+
+}
+.container{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    margin-top: 340px;
+    bottom: 0;
+}
+
+
+/* table.html */
+.table{
+    justify-content:center ;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+
+}
+table, th, td{
+    border: 1px solid black;
+    line-height: 2;
+}
+
+td:hover{
+    background-color: rgba(51, 51, 51, 0.233);
+}
+
+th{
+    text-transform: uppercase;
+}
+
+#log{
+    width: 60%;
+}
+
+#day{
+    color: #333;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.change{
+    padding-top: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.change button{
+    width: 150px;
+    height: 30px;
+    background-color: #333;
+    color: #eee;
+    cursor: pointer;
+    justify-content: end;
+}
+
+
+
+/* landing page */
+.background_landing { 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: sans-serif;
+
+}
+.background_landing{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.01),rgba(0, 0, 0, 0.109),rgba(0, 0, 0, 0.419), rgb(0, 0, 0)), url("mts.jpeg");
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+
+}
+
+.landing_title{
+    color: #eee;
+    font-size: 80px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+#login{
+    width: 40%;
+    height: 25%;
+    margin-top: 210px;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: absolute;
+    border-radius: 5%;
+    background-color: rgb(227, 227, 227);
+    box-shadow: 1px 1px 1px 1px #333;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center ;
+    line-height: 3;
+    justify-content: center;
+}
+label{
+    width: 20%;
+    padding-right: 50px;
+
+}
+input{
+    height:15%;
+    width: 50%;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+
+}
+
+#login_button{
+    background-color: rgb(0, 43, 151);
+    color: #eee;
+    height: 20%;
+    width: 40%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    border-radius: 5%;
+    text-align: center;
+
+}
+#login_button:hover{
+    background-color: rgb(0, 60, 213);
+   
+}
+
+.options{
+    margin-top: 20px;
+    justify-content: center;
+    display:grid;
+    gap: 10px;
+    grid-template-columns: auto auto;
+}
+.options button{
+    background-color: #333;
+    color: #eee;
+    width: 100px;
+    border-radius: 5%;
+
+}
+.options button:hover{
+    background-color: rgb(83, 83, 83);
+   
+    
+}
+
+@media(max-width:717px){
+    #login{
+        padding-top: 0px;
+        max-width: 279px;
+        padding-bottom: 15%;
+    }
+   
+   
+}
